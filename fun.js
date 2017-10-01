@@ -16,7 +16,7 @@ console.log("Bar is now: " + bar); // should be 3
 console.log(foo + '*' + bar + '=' +(foo*bar));
 
 // now you do division!
-console.log(foo + '*' + bar + '=' +('ADD A DIVISION EXPRESSION HERE'));
+console.log(foo + '/' + bar + '=' +(foo/bar));
 
 
 
@@ -33,15 +33,19 @@ function printSquareNumber(number){ // calls square number and prints the result
 }
 
 
-
+printSquareNumber(20);
 // call printSquareNumber
 
 function cubeNumber(number){
+    return Math.pow(number,3);
     //write this with a return statement (like squareNumber)
 }
 
 function printCubeNumber(number){
+    console.log(cubeNumber(number)); 
     // write this with a console.log() statement!
 }
+printCubeNumber(20); 
+
 
 
